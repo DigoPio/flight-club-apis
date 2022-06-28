@@ -1,7 +1,10 @@
 import requests
+from mysecrets import MySecrets
 
-SHEET_TOKEN = 'sdsdksiqhnaoam86629lmsn'
-SHEET_ENDPOINT = 'https://api.sheety.co/1b13221e230fde4ea7488241e97c9e41/flightDeals/users'
+secrets = MySecrets()
+
+SHEET_TOKEN = secrets.sheet_token
+SHEET_ENDPOINT = secrets.sheet_endpoint
 
 
 SHEET_HEADER = {
